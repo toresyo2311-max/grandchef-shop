@@ -259,10 +259,10 @@ button{font:inherit;color:inherit}
 .b2b-card .tel{font-family:var(--serif);font-size:24px;letter-spacing:.01em;color:#f4eee2;margin:10px 0 2px}
 
 /* ── 상품 상세 ─────────────────────────────────────────── */
-.crumbs{font-size:11.5px;color:var(--ink-mute);display:flex;flex-wrap:wrap;gap:6px;padding:18px 0 0}
+.crumbs{font-size:11.5px;color:var(--ink-mute);display:flex;flex-wrap:wrap;gap:6px;padding-top:18px}
 .crumbs a:hover{color:var(--ink)}
 .crumbs span{opacity:.5}
-.pdp{padding:18px 0 clamp(40px,5vw,72px)}
+.pdp{padding-block:18px clamp(40px,5vw,72px)}
 .pdp-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
 .pdp-media{position:sticky;top:110px;background:var(--paper-2);border:1px solid var(--line-soft);border-radius:4px;overflow:hidden}
 .pdp-media img{width:100%;aspect-ratio:1/1;object-fit:cover}
@@ -441,7 +441,7 @@ button{font:inherit;color:inherit}
 .order-line b{color:var(--ink)}
 
 /* ── 안내 페이지 ──────────────────────────────────────── */
-.guide{max-width:880px;margin:0 auto;padding:clamp(26px,3.5vw,44px) 0 clamp(50px,6vw,86px)}
+.guide{max-width:880px;margin:0 auto;padding:clamp(26px,3.5vw,44px) var(--pad) clamp(50px,6vw,86px)}
 .guide h1{font-size:clamp(23px,3vw,32px);letter-spacing:-.045em;margin:0 0 10px}
 .guide>p.lead{color:var(--ink-soft);font-size:13.5px;margin:0 0 28px}
 .gsec{background:var(--surface);border:1px solid var(--line-soft);border-radius:4px;padding:clamp(18px,2.5vw,26px);margin-bottom:14px}
@@ -488,7 +488,7 @@ button{font:inherit;color:inherit}
 .fcol p{font-size:12px;color:#b3aa9a;margin:0 0 6px;line-height:1.65}
 .fcol a:hover{color:#f2ebdd}
 .f-tel{font-family:var(--serif);font-size:22px;color:#f2ebdd;letter-spacing:.02em;margin-bottom:6px !important}
-.footer-info{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0;border-bottom:1px solid var(--line-lt);font-size:11.5px;color:#9d9485}
+.footer-info{display:flex;flex-wrap:wrap;gap:8px 22px;padding-block:20px;border-bottom:1px solid var(--line-lt);font-size:11.5px;color:#9d9485}
 .footer-info .lab{color:#7f776a;margin-right:3px}
 .footer-info .sep{opacity:.4;margin:0 4px}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding-top:18px;font-size:11px;color:#8a8274}
