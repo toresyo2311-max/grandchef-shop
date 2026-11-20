@@ -265,7 +265,7 @@ button{font:inherit;color:inherit}
 .pdp{padding-block:18px clamp(40px,5vw,72px)}
 .pdp-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
 .pdp-media{position:sticky;top:110px;background:var(--paper-2);border:1px solid var(--line-soft);border-radius:4px;overflow:hidden}
-.pdp-media img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.pdp-media img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
 .pdp-media-note{display:flex;justify-content:space-between;gap:10px;padding:10px 14px;background:#fff;border-top:1px solid var(--line-soft);font-size:11px;color:var(--ink-mute)}
 .pdp-info{padding-top:4px}
 .pdp-cat{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--bronze-dp);margin-bottom:12px}
