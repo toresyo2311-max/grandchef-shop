@@ -105,7 +105,7 @@ button{font:inherit;color:inherit}
 }
 .header-main{display:flex;align-items:center;gap:28px;height:78px}
 .brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
-.brand img{height:46px;width:auto}
+.brand img{height:46px;width:auto;mix-blend-mode:multiply}
 .brand-txt{display:flex;flex-direction:column;line-height:1.1}
 .brand-txt strong{font-size:16px;font-weight:800;letter-spacing:-.04em}
 .brand-txt em{font-style:normal;font-size:8.5px;letter-spacing:.22em;color:var(--ink-mute);margin-top:3px}
