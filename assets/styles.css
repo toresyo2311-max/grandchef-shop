@@ -275,7 +275,7 @@ button{font:inherit;color:inherit}
 .pdp-price{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin-bottom:20px}
 .pdp-price .amount{display:inline;font-size:26px;font-weight:800;letter-spacing:-.04em}
 .pdp-price .unit{font-size:12.5px;color:var(--ink-mute);margin-left:4px;font-weight:500}
-.pdp-price .note{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:11px;color:var(--bronze-dp);background:rgba(169,130,79,.1);border:1px solid rgba(169,130,79,.24);padding:4px 8px;border-radius:2px;font-weight:600}
+.pdp-price .note{display:flex;width:fit-content;align-items:center;gap:6px;margin-top:10px;font-size:11px;color:var(--bronze-dp);background:rgba(169,130,79,.1);border:1px solid rgba(169,130,79,.24);padding:4px 8px;border-radius:2px;font-weight:600}
 .pdp-desc{font-size:13.5px;line-height:1.8;color:var(--ink-soft);margin:0 0 22px}
 .opt-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:9px}
 .opt-head strong{font-size:12.5px;letter-spacing:-.02em}
