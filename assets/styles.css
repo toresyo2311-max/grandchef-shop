@@ -535,7 +535,13 @@ button{font:inherit;color:inherit}
   .brand img{height:38px}
   .brand-txt strong{font-size:14.5px}
   .hero-grid{grid-template-columns:1fr;gap:28px}
-  .hero-visual{min-height:0;aspect-ratio:5/3.4}
+  .hero-visual{min-height:0;aspect-ratio:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:8px}
+  .hv-main{grid-row:auto;grid-column:1 / -1;aspect-ratio:16/10}
+  .hv-sub,.hv-card{aspect-ratio:1/1}
+  .hv-card{padding:12px 13px;gap:2px}
+  .hv-card strong{font-size:13px}
+  .hv-card span{font-size:10.5px}
+  .hv-tag{bottom:10px;left:10px;font-size:10.5px}
   .hero-lead{font-size:14px}
   .quick-grid{grid-template-columns:repeat(2,1fr)}
   .grid-products{grid-template-columns:repeat(2,1fr)}
