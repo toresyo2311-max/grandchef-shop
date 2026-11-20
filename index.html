@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>그랑쉐프몰 | 업소용·가정용 주방용품 공식 판매몰</title>
+<meta name="description" content="(주)그랑쉐프의 자체 주문 판매몰. 업소용 대형 볶음솥·코팅팬·밧드·뚝배기부터 가정용 냄비·프라이팬·식기까지 한자리에서. 부울경 직배송, 업소 정기납품, 세금계산서 발행.">
+<meta name="theme-color" content="#171614">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="그랑쉐프몰">
+<meta property="og:title" content="그랑쉐프몰 | GRANDCHEF MALL">
+<meta property="og:description" content="업소용 대형 볶음솥·코팅팬·밧드·뚝배기부터 가정용 냄비·프라이팬까지. 부울경 직배송 · 업소 정기납품 · 세금계산서 발행.">
+<meta property="og:image" content="assets/products/pro-01-wok-griddle.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+KR:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=1">
+</head>
+<body>
+<a class="skip" href="#view">본문으로 건너뛰기</a>
+
+<div class="notice-bar" id="noticeBar">
+  <div class="wrap notice-inner">
+    <span class="notice-tag">1차 시안</span>
+    <p>표시된 금액은 실제 판매가가 아닌 <strong>시안 예시가</strong>이며, 결제(PG)는 아직 연동되지 않아 실제 청구가 이루어지지 않습니다.</p>
+    <a class="notice-link" href="#/guide">자세히</a>
+  </div>
+</div>
+
+<header class="shop-header" id="shopHeader">
+  <div class="wrap header-main">
+    <a class="brand" href="#/" aria-label="그랑쉐프몰 홈">
+      <img src="assets/logo-lockup.png" alt="그랑쉐프 GRAND CHEF 로고" width="461" height="302" decoding="async">
+      <span class="brand-txt">
+        <strong>그랑쉐프몰</strong>
+        <em>GRANDCHEF MALL</em>
+      </span>
+    </a>
+
+    <nav class="shop-nav" aria-label="상품 카테고리">
+      <a href="#/c/biz">업소·식당용</a>
+      <a href="#/c/home">가정·선물용</a>
+      <a href="#/c/all">전체 상품</a>
+      <a href="#/guide">납품·견적</a>
+    </nav>
+
+    <form class="search" id="searchForm" role="search">
+      <input type="search" id="searchInput" name="q" placeholder="상품명·규격으로 검색 (예: 볶음솥 50cm)" aria-label="상품 검색" autocomplete="off">
+      <button type="submit" aria-label="검색">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+      </button>
+    </form>
+
+    <div class="header-actions">
+      <button class="icon-btn mobile-only" id="searchToggle" aria-label="검색 열기" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+      </button>
+      <a class="hbtn desktop-only" href="#/orders">주문내역</a>
+      <a class="cart-btn" href="#/cart" aria-label="장바구니">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9.5 8V6.5a2.5 2.5 0 0 1 5 0V8"/></svg>
+        <span class="cart-label desktop-only">장바구니</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="icon-btn burger mobile-only" id="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <form class="wrap" id="searchFormMobile" role="search">
+      <input type="search" id="searchInputMobile" name="q" placeholder="상품명·규격으로 검색" aria-label="상품 검색" autocomplete="off">
+      <button type="submit" class="btn btn-dark btn-sm">검색</button>
+    </form>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#/c/biz">업소·식당용</a>
+    <a href="#/c/home">가정·선물용</a>
+    <a href="#/c/all">전체 상품</a>
+    <a href="#/orders">주문내역</a>
+    <a href="#/guide">납품·견적</a>
+  </div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo-lockup.png" alt="그랑쉐프 GRAND CHEF" width="461" height="302" loading="lazy">
+      <p class="footer-tagline">좋은 주방은 좋은 도구에서 시작됩니다.<br>업소용·가정용 주방용품, 그랑쉐프가 직접 만들고 보냅니다.</p>
+    </div>
+
+    <div class="footer-cols">
+      <div class="fcol">
+        <h3>고객센터</h3>
+        <p class="f-tel">051-892-8930</p>
+        <p>팩스 051-892-8937</p>
+        <p>평일 08:30 – 17:30<br><span class="muted">주말·공휴일 휴무</span></p>
+      </div>
+      <div class="fcol">
+        <h3>이메일 문의</h3>
+        <p><a href="mailto:grandchef@naver.com">grandchef@naver.com</a></p>
+        <p><a href="mailto:grandcook.com@gmail.com">grandcook.com@gmail.com</a></p>
+        <p class="muted">세금계산서·대량 견적 문의 접수</p>
+      </div>
+      <div class="fcol">
+        <h3>쇼핑 안내</h3>
+        <p><a href="#/guide">배송·교환·반품</a></p>
+        <p><a href="#/guide?sec=b2b">업소 정기납품</a></p>
+        <p><a href="#/guide?sec=tax">세금계산서 발행</a></p>
+        <p><a href="#/orders">주문내역 조회</a></p>
+      </div>
+      <div class="fcol">
+        <h3>회사</h3>
+        <p><a href="https://grandchef.co.kr" target="_blank" rel="noopener">회사소개 홈페이지 ↗</a></p>
+        <p><a href="#/guide?sec=notice">시안 안내</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap footer-info">
+    <div><span class="lab">상호</span> (주)그랑쉐프 <span class="sep">·</span> <span class="lab">대표이사</span> 정희숙</div>
+    <div><span class="lab">사업자등록번호</span> 605-81-47231</div>
+    <div><span class="lab">주소</span> 부산광역시 강서구 평강로345번길 45 (대저1동) 46700</div>
+    <div><span class="lab">대표전화</span> 051-892-8930 <span class="sep">·</span> <span class="lab">팩스</span> 051-892-8937</div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© 2026 GRANDCHEF CO., LTD. All rights reserved.</p>
+    <p class="footer-note">본 사이트는 그랑쉐프몰 1차 시안(demo)입니다. 주문·결제는 실제로 처리되지 않습니다.</p>
+  </div>
+</footer>
+
+<div class="cart-bar" id="cartBar" hidden>
+  <div class="cart-bar-txt">
+    <span>장바구니 <b id="barCount">0</b>개</span>
+    <strong id="barTotal">₩0</strong>
+  </div>
+  <a class="btn btn-bronze" href="#/cart">장바구니 보기</a>
+</div>
+
+<div class="modal-root" id="modalRoot" hidden></div>
+
+<noscript>
+  <div class="wrap" style="padding:40px 0">이 사이트는 상품 탐색과 장바구니·주문서 기능에 JavaScript를 사용합니다. JavaScript를 켜 주세요.</div>
+</noscript>
+
+<script src="assets/data.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
