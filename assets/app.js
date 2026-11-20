@@ -709,16 +709,19 @@
     if (!form) return null;
     var data = {};
     $$('input, textarea', form).forEach(function (el) {
+      if (el.type === 'radio') { if (el.checked) data[el.name] = el.value; return; }
+      if (el.type === 'checkbox') { if (el.id) data[el.id] = el.checked; return; }
       if (!el.name) return;
-      if (el.type === 'radio') { if (el.checked) data[el.name] = el.value; }
-      else if (el.type === 'checkbox') data[el.id] = el.checked;
-      else data[el.name] = el.value.trim();
+      data[el.name] = el.value.trim();
     });
     return data;
   }
   function persistForm() {
     var d = collectForm();
-    if (d) writeJSON(FORM_KEY, d);
+    if (!d) return;
+    delete d.agree;    // 동의 체크는 매 주문마다 다시 받는다
+    delete d.sameAs;
+    writeJSON(FORM_KEY, d);
   }
   function validate(d) {
     var errors = [];
